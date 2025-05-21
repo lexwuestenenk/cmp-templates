@@ -46,7 +46,6 @@ resource "vsphere_virtual_machine" "ubuntu_vm" {
 
   num_cpus = var.cpus
   memory   = var.mems
-  guest_id = data.vsphere_virtual_machine.template.guest_id
 
   scsi_type = data.vsphere_virtual_machine.template.scsi_type
 
