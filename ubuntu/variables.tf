@@ -6,6 +6,8 @@ variable "datacenter" {}
 variable "datastore" {}
 variable "cluster" {}
 variable "network" {}
+variable "mems" {}
+variable "cpus" {}
 
 variable "template_name" {}
 variable "vm_name" {}
