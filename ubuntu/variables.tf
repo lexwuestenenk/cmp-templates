@@ -8,7 +8,7 @@ variable "vsphere_password" {
 }
 
 variable "vsphere_server" {
-  default = "vcenter.cmp.caa"
+  default = "192.168.1.30"
 }
 
 variable "datacenter" {
