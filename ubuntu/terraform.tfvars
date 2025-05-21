@@ -6,6 +6,8 @@ datacenter       = "cmp"
 cluster          = "cluster"
 datastore        = "vm-data"
 network          = "VM Network"
+mems             = 2048
+cpus             = 2
 
 template_name    = "ubuntu-template"
 vm_name          = "ubuntu-test-01"
