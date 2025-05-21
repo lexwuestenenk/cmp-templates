@@ -1,16 +1,52 @@
-variable "vsphere_user" {}
-variable "vsphere_password" {}
-variable "vsphere_server" {}
+variable "vsphere_user" {
+  default = "administrator@vsphere.local"
+}
 
-variable "datacenter" {}
-variable "datastore" {}
-variable "cluster" {}
-variable "network" {}
-variable "mems" {}
-variable "cpus" {}
+variable "vsphere_password" {
+  default = "Welkom01!"
+  sensitive = true
+}
 
-variable "template_name" {}
-variable "vm_name" {}
+variable "vsphere_server" {
+  default = "vsphere.cmp.caa"
+}
 
-variable "ipv4_address" {}
-variable "ipv4_gateway" {}
+variable "datacenter" {
+  default = "cmp"
+}
+
+variable "datastore" {
+  default = "vm-data"
+}
+
+variable "cluster" {
+  default = "cluster"
+}
+
+variable "network" {
+  default = "VM Network"
+}
+
+variable "mems" {
+  type    = number
+  default = 2048
+}
+
+variable "cpus" {
+  type    = number
+  default = 2
+}
+
+variable "template_name" {
+  default = "ubuntu-template"
+}
+
+variable "vm_name" {
+}
+
+variable "ipv4_address" {
+}
+
+variable "ipv4_gateway" {
+  default = "192.168.1.1"
+}
